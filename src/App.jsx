@@ -1,8 +1,30 @@
+import { useEffect } from "react";
 import bigHouseLogo from "./assets/img/big-house-logo.png";
+import dripCityLogo from "./assets/img/drip-city-logo.png";
 import heroDownArrow from "./assets/svgs/hero-down-arrow.svg";
 import EventSection from "./components/EventSection/EventSection";
+import gsap from "gsap";
+import { ScrollTrigger, Draggable } from "gsap/all";
+gsap.registerPlugin(ScrollTrigger, Draggable);
 
 function App() {
+  useEffect(() => {
+    const showAnim = gsap
+      .from("#header", {
+        yPercent: -100,
+        paused: true,
+        duration: 0.2,
+      })
+      .progress(1);
+
+    ScrollTrigger.create({
+      start: "top top",
+      end: "max",
+      onUpdate: (self) => {
+        self.direction === -1 ? showAnim.play() : showAnim.reverse();
+      },
+    });
+  }, []);
   return (
     <>
       <header id="header" className="min-w-full fixed top-0 py-2 z-50">
@@ -74,7 +96,49 @@ function App() {
             alt=""
           />
         </section>
-        {/* <EventSection /> */}
+        <section className="relative py-32 bg-contain bg-no-repeat bg-[right_center] bg-[url('./assets/img/about-section-bg.png')]">
+          <div className="container mx-auto px-4 md:px-12">
+            <div className="flex flex-col md:flex-row w-full text-[#3B0B4D]">
+              <div className="w-full md:w-[50%] flex flex-col">
+                <h2 className="text-7xl italic font-goord mb-12">
+                  Big House <br /> Entertainments
+                </h2>
+                <div className="flex items-center gap-12">
+                  <img
+                    src={dripCityLogo}
+                    className="w-24 h-24"
+                    alt="Drip City Logo"
+                  />
+                  <img
+                    src={bigHouseLogo}
+                    className="w-26 h-24"
+                    alt="Drip City Logo"
+                  />
+                </div>
+              </div>
+              <div className="w-full md:w-[50%] flex flex-col">
+                <p className="font-outfit text-lg leading-7">
+                  Drip City Beach Party is the ultimate celebration of summer
+                  vibes, bringing together a dynamic fusion of fun, music, and
+                  social connections. Set against the stunning backdrop of
+                  McCarthy Beach in Abraka, Delta State, this event promises an
+                  unforgettable experience filled with picnic delights, engaging
+                  games, and an atmosphere buzzing with excitement and energy.
+                  <br />
+                  <br />
+                  The Drip City Beach Party transcends the typical beach outing,
+                  creating a vibrant space where attendees can immerse
+                  themselves in a unique blend of entertainment and camaraderie.
+                  From sunrise fitness sessions to late-night festivities, this
+                  event is designed to cater to diverse tastes and preferences,
+                  ensuring that everyone finds their perfect moment of joy and
+                  connection. Join us for a day where the beach meets the beat,
+                  and every moment is a chance to create lasting memories
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
