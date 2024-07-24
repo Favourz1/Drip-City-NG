@@ -5,6 +5,7 @@ import heroDownArrow from "./assets/svgs/hero-down-arrow.svg";
 import EventSection from "./components/EventSection/EventSection";
 import gsap from "gsap";
 import { ScrollTrigger, Draggable } from "gsap/all";
+import { PastEventsSection } from "./components/PastEventsSection";
 gsap.registerPlugin(ScrollTrigger, Draggable);
 
 function App() {
@@ -84,7 +85,7 @@ function App() {
         >
           <div className="container mx-auto px-4 md:px-12 min-h-dvh max-h-dvh">
             <div className="flex flex-col items-center justify-center min-h-[inherit] pt-12">
-              <h1 className="font-goord uppercase text-4xl italic text-white mb-4">
+              <h1 className="font-goord uppercase text-6xl italic text-white mb-4">
                 Party With The Best💃
               </h1>
               <EventSection />
@@ -139,6 +140,7 @@ function App() {
             </div>
           </div>
         </section>
+        <PastEventsSection />
       </main>
     </>
   );
