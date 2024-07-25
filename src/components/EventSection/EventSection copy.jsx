@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger, Draggable } from "gsap/all";
-import beachEvent from "../../assets/img/beach-party-flier.png";
-import beachEventSoon from "../../assets/img/beach-party-flier-soon.png";
-import beachEventSold from "../../assets/img/beach-party-flier-sold.png";
+import beachEvent from "../../assets/img/beach-party-flier.jpg";
+import beachEventSoon from "../../assets/img/beach-party-flier-soon.jpg";
+import beachEventSold from "../../assets/img/beach-party-flier-sold.jpg";
 
 gsap.registerPlugin(ScrollTrigger, Draggable);
 

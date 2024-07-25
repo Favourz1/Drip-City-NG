@@ -96,7 +96,7 @@ function App() {
       </header>
       <main>
         <section
-          className="relative mb-5 pt-1 bg-center bg-cover bg-[url('./assets/img/hero-bg.png')] overflow-hidden"
+          className="relative mb-5 pt-1 bg-center bg-cover bg-[url('./assets/img/hero-bg.jpg')] overflow-hidden"
           // style={{ backgroundImage: heroBg }}
         >
           <div className="container mx-auto px-4 md:px-12 min-h-dvh max-h-dvh">

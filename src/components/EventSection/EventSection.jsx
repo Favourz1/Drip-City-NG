@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
-import beachEvent from "../../assets/img/beach-party-flier.png";
-import beachEventSoon from "../../assets/img/beach-party-flier-soon.png";
-import beachEventSold from "../../assets/img/beach-party-flier-sold.png";
+import beachEvent from "../../assets/img/beach-party-flier.jpg";
+import beachEventSoon from "../../assets/img/beach-party-flier-soon.jpg";
+import beachEventSold from "../../assets/img/beach-party-flier-sold.jpg";
 
 const EVENT_FLIERS = [
   beachEventSoon,
