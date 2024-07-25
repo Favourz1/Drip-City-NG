@@ -1,6 +1,12 @@
 import { useEffect } from "react";
 import bigHouseLogo from "./assets/img/big-house-logo.png";
 import dripCityLogo from "./assets/img/drip-city-logo.png";
+import abrakaPartyFlier from "./assets/img/beach-party-abraka.jpg";
+import manDancingEmoji from "./assets/img/man-dancing-emoji.png";
+import sponsorsLogo1 from "./assets/img/sponsors-logo-1.png";
+import sponsorsLogo2 from "./assets/img/sponsors-logo-2.png";
+import sponsorsLogo3 from "./assets/img/sponsors-logo-3.png";
+import sponsorsLogo4 from "./assets/img/sponsors-logo-4.png";
 import heroDownArrow from "./assets/svgs/hero-down-arrow.svg";
 import EventSection from "./components/EventSection/EventSection";
 import gsap from "gsap";
@@ -57,7 +63,7 @@ function App() {
             </a>
             <a
               role="button"
-              className="hidden md:flex items-center py-2 px-5 gap-1 font-medium text-white bg-transparent border-2 border-white rounded-3xl"
+              className="hidden md:flex items-center py-2 px-5 gap-1 font-medium text-white bg-transparent border-2 border-white rounded-3xl hover:bg-[#ffffff12]"
             >
               <span>Other Events</span>
               <span>
@@ -97,7 +103,7 @@ function App() {
             alt=""
           />
         </section>
-        <section className="relative py-32 bg-contain bg-no-repeat bg-[right_center] bg-[url('./assets/img/about-section-bg.png')]">
+        <section className="relative py-32 bg-contain bg-no-repeat bg-[right_center] bg-fixed bg-[url('./assets/img/about-section-bg.png')]">
           <div className="container mx-auto px-4 md:px-12">
             <div className="flex flex-col md:flex-row w-full text-[#3B0B4D]">
               <div className="w-full md:w-[50%] flex flex-col">
@@ -141,6 +147,188 @@ function App() {
           </div>
         </section>
         <PastEventsSection />
+        <section className="relative py-20 bg-[#3B0B4D] bg-cover bg-no-repeat bg-center bg-fixed bg-[url('./assets/img/poster-section-bg.png')]">
+          <div className="container mx-auto px-4 md:px-12">
+            <div className="flex flex-col md:flex-row w-full text-[#3B0B4D]">
+              <div className="w-full md:w-[50%] flex flex-col items-center">
+                <img
+                  className="w-[300px] max-w-[400px] max-h-[500px]"
+                  src={abrakaPartyFlier}
+                  alt=""
+                />
+              </div>
+              <div className="w-full md:w-[50%] flex flex-col justify-center text-white">
+                <div className="flex flex-col mb-8">
+                  <h4 className="font-medium text-4xl mb-1">
+                    Drip City Beach Party
+                  </h4>
+                  <p className="font-light text-[#FFFFFFB2] mb-6">
+                    Connections with hype and vibes
+                  </p>
+
+                  <p className="text-xl mb-1">July 28th, 2024</p>
+                  <p className="font-light text-[#FFFFFFB2] mb-6">
+                    McCarthy beach • Abraka Delta state
+                  </p>
+
+                  <p className="font-light text-[#FFFFFFB2]">
+                    **Tickets available
+                  </p>
+                </div>
+                <button className="w-[200px] flex items-center justify-center border-2 border-white rounded-md py-5 px-8 font-semibold text-xl hover:bg-[#ffffff12]">
+                  Buy Tickets
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="relative py-16 overflow-hidden">
+          <div className="container mx-auto px-4 md:px-12">
+            <div className="flex flex-col items-center w-full text-[#3B0B4D]">
+              <div className="flex flex-col items-center justify-center mb-12">
+                <div className="max-w-fit flex items-center justify-center px-3 py-2 gap-2 rounded-3xl border border-[#2D073A] bg-[#E1A8F64F] text-lg font-outfit mb-6">
+                  Walk with us
+                </div>
+
+                <h2 className="flex items-center font-goord italic text-5xl font-semibold">
+                  UPCOMING &nbsp;
+                  <img className="h-10 w-10" src={manDancingEmoji} alt="" />
+                </h2>
+              </div>{" "}
+              <div className="flex justify-center md:justify-start gap-12 md:pl-32 w-full">
+                <div className="flex items-center bg-[#FEEEDF] p-5 gap-4 rounded-xl max-h-[400px] w-[60%] min-w-[300px] max-w-[600px]">
+                  <div className="hidden md:flex flex-col w-[30%] h-full bg-cover bg-no-repeat bg-[100%_100%] bg-[url('./assets/img/beach-party-abraka.jpg')] drop-shadow-md">
+                    {/* <img className="w-[80%]" src={abrakaPartyFlier} alt="" /> */}
+                  </div>
+                  <div className="flex flex-col w-full md:w-[70%]">
+                    <div className="flex flex-col mb-6">
+                      <p className="font-medium text-3xl mb-4">
+                        Drip city Lagos
+                      </p>
+                      <p className="font-medium text-xl mb-1">Date TBA</p>
+                      <p className="font-light text-[#30033BB2] mb-3">
+                        Landmark beach • Lekki, Lagos state
+                      </p>
+                      <p className=" text-lg font-medium text-[#30033BB2]">
+                        Coming Soon
+                      </p>
+                    </div>
+                    <button className="w-full md:max-w-[200px] flex items-center justify-center  text-[#30033B] border-2 border-[#30033B80] rounded-md py-3 px-4 font-semibold text-xl hover:bg-[#30033b0d]">
+                      Buy Tickets
+                    </button>
+                  </div>
+                </div>
+
+                <div className="absolute right-[-350px] top-[41%] flex items-center bg-[#FEEEDF] p-5 gap-4 rounded-xl max-h-[400px] w-[60%] min-w-[300px] max-w-[600px]">
+                  <div className="hidden md:flex flex-col w-[30%] h-[218px] min-h-full bg-cover bg-no-repeat bg-[100%_100%] bg-[url('./assets/img/beach-party-abraka.jpg')] drop-shadow-md grayscale">
+                    {/* <img className="w-[80%]" src={abrakaPartyFlier} alt="" /> */}
+                  </div>
+                  <div className="flex flex-col w-full md:w-[70%]">
+                    <div className="flex flex-col mb-6">
+                      <p className="font-medium text-3xl mb-4">
+                        Drip city Lagos
+                      </p>
+                      <p className="font-medium text-xl mb-1">Date TBA</p>
+                      <p className="font-light text-[#30033BB2] mb-3">
+                        Maldives beach • Lekki, Lagos state
+                      </p>
+                      <p className=" text-lg font-medium text-[#30033BB2]">
+                        Coming Soon
+                      </p>
+                    </div>
+                    <button className="w-full md:max-w-[200px] flex items-center justify-center  text-[#30033B] border-2 border-[#30033B80] rounded-md py-3 px-4 font-semibold text-xl hover:bg-[#30033b0d]">
+                      Buy Tickets
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="h-[70dvh] bg-center bg-cover bg-fixed bg-no-repeat bg-[url('./assets/img/catch-section-bg.png')] overflow-hidden"></section>
+
+        <section className="relative py-16 overflow-hidden">
+          <div className="container mx-auto px-4 md:px-12">
+            <div className="flex flex-col items-center w-full text-[#3B0B4D]">
+              <div className="flex flex-col items-center justify-center mb-12">
+                <div className="max-w-fit flex items-center justify-center px-3 py-2 gap-2 rounded-3xl border border-[#2D073A] bg-[#E1A8F64F] text-lg font-outfit mb-6">
+                  Brands we work with
+                </div>
+
+                <h2 className="flex items-center font-goord italic text-5xl font-semibold">
+                  SPONSORS
+                </h2>
+              </div>{" "}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="flex items-center justify-center h-[230px] min-w-[300px] rounded-lg p-4  bg-gradient-to-r from-[#FCD6B300] via-[#FCD6B3] to-[#FCD6B3]">
+                  <img
+                    className="w-[150px] h-[150px]"
+                    src={sponsorsLogo1}
+                    alt=""
+                  />
+                </div>
+                <div className="flex items-center justify-center h-[230px] min-w-[300px] rounded-lg p-4 bg-[#FCD6B3]">
+                  <img
+                    className="w-[150px] h-[150px]"
+                    src={sponsorsLogo2}
+                    alt=""
+                  />
+                </div>
+                <div className="flex items-center justify-center h-[230px] min-w-[300px] rounded-lg p-4 bg-gradient-to-l from-[#FCD6B300] via-[#FCD6B3] to-[#FCD6B3]">
+                  <img
+                    className="w-[150px] h-[150px]"
+                    src={sponsorsLogo3}
+                    alt=""
+                  />
+                </div>
+                <div className="flex items-center justify-center h-[230px] min-w-[300px] rounded-lg p-4 bg-gradient-to-r from-[#FCD6B300] via-[#FCD6B3] to-[#FCD6B3]">
+                  <img
+                    className="w-[150px] h-[150px]"
+                    src={sponsorsLogo4}
+                    alt=""
+                  />
+                </div>
+                <div className="flex items-center justify-center h-[230px] min-w-[300px] rounded-lg p-4 bg-[#FCD6B3]">
+                  <img
+                    className="w-[150px] h-[150px]"
+                    src={sponsorsLogo1}
+                    alt=""
+                  />
+                </div>
+                <div className="flex items-center justify-center h-[230px] min-w-[300px] rounded-lg p-4 bg-gradient-to-l from-[#FCD6B300] via-[#FCD6B3] to-[#FCD6B3]">
+                  <p className="font-semibold text-xl text-[#BE8D92]">
+                    Reserved For You
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="h-[50dvh] bg-center bg-cover bg-no-repeat bg-[url('./assets/img/newsletter-section-bg.png')] overflow-hidden">
+          <div className="container mx-auto px-4 md:px-12 h-full">
+            <div className="flex flex-col items-center justify-center min-h-full min-w-full">
+              <div className="flex flex-col justify-center items-center w-[50%]">
+                <p className="text-xl font-medium text-[#FDDDBF] mb-6">
+                  NEVER MISS AN UPDATE
+                </p>
+                <div className="relative flex h-14 w-full">
+                  <input
+                    className="h-14 w-full px-4 py-2 pr-20 font-medium text-[#D388ED6E] rounded-sm border-b-2 border-b-[#D388ED]/60 border-0 outline-none focus:border-b-2 focus-visible:border-b-2 focus-visible:border-b-[#D388ED] bg-[#FDF6EF1A] placeholder:text-[#D388ED6E]"
+                    placeholder="Enter Your Email"
+                    type="email "
+                  />
+                  <button className="absolute right-4 top-1/2 -translate-y-1/2 text-[#FDDDBF80] hover:text-[#FDDDBF] font-medium cursor-pointer">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div className="h-screen bg-blue-500"></div>
+        <div className="h-screen bg-green-500"></div>
       </main>
     </>
   );
