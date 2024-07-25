@@ -91,7 +91,7 @@ function App() {
         >
           <div className="container mx-auto px-4 md:px-12 min-h-dvh max-h-dvh">
             <div className="flex flex-col items-center justify-center min-h-[inherit] pt-12">
-              <h1 className="font-goord uppercase text-6xl italic text-white mb-4">
+              <h1 className="font-goord uppercase text-4xl md:text-6xl text-center italic text-white mb-4">
                 Party With The Best💃
               </h1>
               <EventSection />
@@ -105,20 +105,20 @@ function App() {
         </section>
         <section className="relative py-32 bg-contain bg-no-repeat bg-[right_center] bg-fixed bg-[url('./assets/img/about-section-bg.png')]">
           <div className="container mx-auto px-4 md:px-12">
-            <div className="flex flex-col md:flex-row w-full text-[#3B0B4D]">
+            <div className="flex flex-col md:flex-row justify-center  gap-4 w-full text-[#3B0B4D]">
               <div className="w-full md:w-[50%] flex flex-col">
-                <h2 className="text-7xl italic font-goord mb-12">
+                <h2 className="text-3xl md:text-7xl italic font-goord text-center md:text-start mb-12">
                   Big House <br /> Entertainments
                 </h2>
-                <div className="flex items-center gap-12">
+                <div className="hidden md:flex items-center gap-12">
                   <img
                     src={dripCityLogo}
-                    className="w-24 h-24"
+                    className="w-12 md:w-24 h-12 md:h-24"
                     alt="Drip City Logo"
                   />
                   <img
                     src={bigHouseLogo}
-                    className="w-26 h-24"
+                    className="w-26 h-12 md:h-24"
                     alt="Drip City Logo"
                   />
                 </div>
@@ -142,6 +142,18 @@ function App() {
                   connection. Join us for a day where the beach meets the beat,
                   and every moment is a chance to create lasting memories
                 </p>
+                <div className="flex md:hidden items-center gap-12 mt-8">
+                  <img
+                    src={dripCityLogo}
+                    className="w-12 md:w-24 h-12 md:h-24"
+                    alt="Drip City Logo"
+                  />
+                  <img
+                    src={bigHouseLogo}
+                    className="w-26 h-12 md:h-24"
+                    alt="Drip City Logo"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -149,15 +161,15 @@ function App() {
         <PastEventsSection />
         <section className="relative py-20 bg-[#3B0B4D] bg-cover bg-no-repeat bg-center bg-fixed bg-[url('./assets/img/poster-section-bg.png')]">
           <div className="container mx-auto px-4 md:px-12">
-            <div className="flex flex-col md:flex-row w-full text-[#3B0B4D]">
-              <div className="w-full md:w-[50%] flex flex-col items-center">
+            <div className="flex flex-col-reverse md:flex-row gap-5 w-full text-[#3B0B4D]">
+              <div className="w-full md:w-[50%] hidden md:flex flex-col items-center">
                 <img
                   className="w-[300px] max-w-[400px] max-h-[500px]"
                   src={abrakaPartyFlier}
                   alt=""
                 />
               </div>
-              <div className="w-full md:w-[50%] flex flex-col justify-center text-white">
+              <div className="w-full md:w-[50%] flex flex-col items-center md:items-start justify-center text-center md:text-left text-white">
                 <div className="flex flex-col mb-8">
                   <h4 className="font-medium text-4xl mb-1">
                     Drip City Beach Party
@@ -190,7 +202,7 @@ function App() {
                   Walk with us
                 </div>
 
-                <h2 className="flex items-center font-goord italic text-5xl font-semibold">
+                <h2 className="flex items-center font-goord italic text-[2.5rem] text-5xl font-semibold">
                   UPCOMING &nbsp;
                   <img className="h-10 w-10" src={manDancingEmoji} alt="" />
                 </h2>
@@ -255,7 +267,7 @@ function App() {
                   Brands we work with
                 </div>
 
-                <h2 className="flex items-center font-goord italic text-5xl font-semibold">
+                <h2 className="flex items-center font-goord italic text-[2.5rem] text-5xl font-semibold">
                   SPONSORS
                 </h2>
               </div>{" "}
@@ -308,7 +320,7 @@ function App() {
         <section className="h-[50dvh] bg-center bg-cover bg-no-repeat bg-[url('./assets/img/newsletter-section-bg.png')] overflow-hidden">
           <div className="container mx-auto px-4 md:px-12 h-full">
             <div className="flex flex-col items-center justify-center min-h-full min-w-full">
-              <div className="flex flex-col justify-center items-center w-[50%]">
+              <div className="flex flex-col justify-center items-center w-[80%] md:w-[50%]">
                 <p className="text-xl font-medium text-[#FDDDBF] mb-6">
                   NEVER MISS AN UPDATE
                 </p>
@@ -333,16 +345,16 @@ function App() {
                 <img className="w-20" src={bigHouseLogo} alt="Drip City Logo" />
               </a>
               <div className="h-[0.5px] bg-gradient-to-r from-[#FFFFFF00] via-white to-[#FFFFFF00] my-6"></div>
-              <div className="flex justify-between min-h-[150px]">
-                <div className="flex flex-col justify-between">
+              <div className="flex flex-col-reverse md:flex-row justify-between gap-6 min-h-[150px]">
+                <div className="flex flex-col items-center md:items-start justify-between min-h-[80px]">
                   <div className="flex items-center gap-3">
-                    <div className="flex items-center justify-center px-2 py-1 min-w-24 text-lg border border-white rounded-3xl hover:bg-[#ffffff12] cursor-pointer">
+                    <div className="flex items-center justify-center px-2 py-1 min-w-24 text-sm md:text-lg border border-white rounded-3xl hover:bg-[#ffffff12] cursor-pointer">
                       The Team
                     </div>
-                    <div className="flex items-center justify-center px-2 py-1 min-w-24 text-lg border border-white rounded-3xl hover:bg-[#ffffff12] cursor-pointer">
+                    <div className="flex items-center justify-center px-2 py-1 min-w-24 text-sm md:text-lg border border-white rounded-3xl hover:bg-[#ffffff12] cursor-pointer">
                       All Events
                     </div>
-                    <div className="flex items-center justify-center px-2 py-1 min-w-24 text-lg border border-white rounded-3xl hover:bg-[#ffffff12] cursor-pointer">
+                    <div className="flex items-center justify-center px-2 py-1 min-w-24 text-sm md:text-lg border border-white rounded-3xl hover:bg-[#ffffff12] cursor-pointer">
                       Contact
                     </div>
                   </div>
@@ -423,7 +435,7 @@ function App() {
                     </a>
                   </div>
                 </div>
-                <div className="flex flex-col items-end justify-between">
+                <div className="flex flex-col items-center md:items-end justify-between min-h-[80px]">
                   <a
                     role="button"
                     className="flex items-center py-2 px-5 gap-1 text-[#4D173D] font-medium border-2 border-[#FFCE00] bg-[#FFCE00] rounded-3xl"
