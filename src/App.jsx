@@ -13,8 +13,18 @@ import gsap from "gsap";
 import { ScrollTrigger, Draggable } from "gsap/all";
 import { PastEventsSection } from "./components/PastEventsSection";
 gsap.registerPlugin(ScrollTrigger, Draggable);
+import "./glitch.scss";
 
 function App() {
+  const scrollToElementBySelector = (selector) => {
+    const element = document.querySelector(selector);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    } else {
+      console.warn(`Element with selector ${selector} not found.`);
+    }
+  };
+
   useEffect(() => {
     const showAnim = gsap
       .from("#header", {
@@ -91,9 +101,17 @@ function App() {
         >
           <div className="container mx-auto px-4 md:px-12 min-h-dvh max-h-dvh">
             <div className="flex flex-col items-center justify-center min-h-[inherit] pt-12">
-              <h1 className="font-goord uppercase text-4xl md:text-6xl text-center italic text-white mb-4">
+              {/* <h1 className="font-goord uppercase text-4xl md:text-6xl text-center italic text-white mb-4">
                 Party With The Best💃
-              </h1>
+              </h1> */}
+              {/* Glow effect - https://codepen.io/acupoftee/pen/WNbBxXq */}
+              <div
+                className="animate-text-glitch font-goord uppercase text-4xl md:text-6xl text-center italic text-white mb-4"
+                data-text="Party With The Best"
+              >
+                Party With The Best💃
+              </div>
+              <div className="animate-text-glow">Party With The Best</div>
               <EventSection />
             </div>
           </div>
@@ -101,6 +119,7 @@ function App() {
             className="absolute bottom-0 left-0 cursor-pointer"
             src={heroDownArrow}
             alt=""
+            onClick={() => scrollToElementBySelector("#poster-section")}
           />
         </section>
         <section className="relative py-32 bg-contain bg-no-repeat bg-[right_center] bg-fixed bg-[url('./assets/img/about-section-bg.png')]">
@@ -159,7 +178,10 @@ function App() {
           </div>
         </section>
         <PastEventsSection />
-        <section className="relative py-20 bg-[#3B0B4D] bg-cover bg-no-repeat bg-center bg-fixed bg-[url('./assets/img/poster-section-bg.png')]">
+        <section
+          id="poster-section"
+          className="relative py-20 bg-[#3B0B4D] bg-cover bg-no-repeat bg-center bg-fixed bg-[url('./assets/img/poster-section-bg.png')]"
+        >
           <div className="container mx-auto px-4 md:px-12">
             <div className="flex flex-col-reverse md:flex-row gap-5 w-full text-[#3B0B4D]">
               <div className="w-full md:w-[50%] hidden md:flex flex-col items-center">

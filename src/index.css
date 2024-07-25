@@ -22,10 +22,43 @@
   -webkit-text-size-adjust: 100%;
 }
 
+/* WebKit (Safari, Chrome, etc.) */
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgba(128, 128, 128, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3B0B4D;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+/* Microsoft Edge and Internet Explorer */
+*::-ms-scrollbar {
+    width: 12px;
+    background-color: rgba(128, 128, 128, 0.6);
+}
+
+*::-ms-scrollbar-thumb {
+    background-color: #3B0B4D;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+
 html{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scrollbar-color: #3B0B4D;
+  scrollbar-width: 12px;
   @apply overflow-x-hidden md:overflow-x-visible ; 
 }
 
