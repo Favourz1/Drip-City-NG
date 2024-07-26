@@ -19,7 +19,7 @@ const EVENT_FLIERS = [
   beachEvent,
 ];
 
-const EventSection = () => {
+const EventSection2 = () => {
   const [activeBanner, setActiveBanner] = useState(1);
 
   useEffect(() => {
@@ -244,4 +244,4 @@ const EventSection = () => {
   );
 };
 
-export default EventSection;
+export default EventSection2;

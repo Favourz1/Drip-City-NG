@@ -52,7 +52,8 @@ function App() {
 
           <div className="flex items-center gap-3">
             <a
-              role="button"
+              href="https://wa.me/+2348050638697"
+              target="_blank"
               className="flex items-center py-2 px-5 gap-1 text-[#4D173D] font-medium border-2 border-[#FFCE00] bg-[#FFCE00] rounded-3xl"
             >
               <span>Buy Ticket</span>
@@ -72,7 +73,8 @@ function App() {
               </span>
             </a>
             <a
-              role="button"
+              href="https://www.instagram.com/bighouseentertainment316/"
+              target="_blank"
               className="hidden md:flex items-center py-2 px-5 gap-1 font-medium text-white bg-transparent border-2 border-white rounded-3xl hover:bg-[#ffffff12]"
             >
               <span>Other Events</span>
@@ -209,9 +211,13 @@ function App() {
                     **Tickets available
                   </p>
                 </div>
-                <button className="w-[200px] flex items-center justify-center border-2 border-white rounded-md py-5 px-8 font-semibold text-xl hover:bg-[#ffffff12]">
+                <a
+                  href="https://wa.me/+2348050638697"
+                  target="_blank"
+                  className="w-[200px] flex items-center justify-center border-2 border-white rounded-md py-5 px-8 font-semibold text-xl hover:bg-[#ffffff12]"
+                >
                   Buy Tickets
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -247,9 +253,13 @@ function App() {
                         Coming Soon
                       </p>
                     </div>
-                    <button className="w-full md:max-w-[200px] flex items-center justify-center  text-[#30033B] border-2 border-[#30033B80] rounded-md py-3 px-4 font-semibold text-xl hover:bg-[#30033b0d]">
+                    <a
+                      href="https://wa.me/+2348050638697"
+                      target="_blank"
+                      className="w-full md:max-w-[200px] flex items-center justify-center  text-[#30033B] border-2 border-[#30033B80] rounded-md py-3 px-4 font-semibold text-xl hover:bg-[#30033b0d]"
+                    >
                       Buy Tickets
-                    </button>
+                    </a>
                   </div>
                 </div>
 
@@ -270,9 +280,13 @@ function App() {
                         Coming Soon
                       </p>
                     </div>
-                    <button className="w-full md:max-w-[200px] flex items-center justify-center  text-[#30033B] border-2 border-[#30033B80] rounded-md py-3 px-4 font-semibold text-xl hover:bg-[#30033b0d]">
+                    <a
+                      href="https://wa.me/+2348050638697"
+                      target="_blank"
+                      className="w-full md:max-w-[200px] flex items-center justify-center  text-[#30033B] border-2 border-[#30033B80] rounded-md py-3 px-4 font-semibold text-xl hover:bg-[#30033b0d]"
+                    >
                       Buy Tickets
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -377,15 +391,20 @@ function App() {
                   <div className="flex items-center justify-center px-2 py-1 min-w-24 text-sm md:text-lg border border-white rounded-3xl hover:bg-[#ffffff12] cursor-pointer">
                     All Events
                   </div>
-                  <div className="flex items-center justify-center px-2 py-1 min-w-24 text-sm md:text-lg border border-white rounded-3xl hover:bg-[#ffffff12] cursor-pointer">
+                  <a
+                    href="mailto:dripcityw2024@gmail.com"
+                    target="_blank"
+                    className="flex items-center justify-center px-2 py-1 min-w-24 text-sm md:text-lg border border-white rounded-3xl hover:bg-[#ffffff12] cursor-pointer"
+                  >
                     Contact
-                  </div>
+                  </a>
                 </div>
 
                 {/* logos */}
                 <div className="flex items-center gap-5">
                   <a
-                    href="#"
+                    href="https://x.com/BighouseEn83334"
+                    target="_blank"
                     className="flex items-center justify-center p-1 rounded-full border border-white hover:bg-[#ffffff12] cursor-pointer"
                   >
                     {/* x logo */}
@@ -403,7 +422,8 @@ function App() {
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/bighouseentertainment316/"
+                    target="_blank"
                     className="flex items-center justify-center p-1.5 rounded-full border border-white hover:bg-[#ffffff12] cursor-pointer"
                   >
                     {/* Instagram logo */}
@@ -421,7 +441,8 @@ function App() {
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="https://www.tiktok.com/@bighouse829"
+                    target="_blank"
                     className="flex items-center justify-center p-1.5 rounded-full border border-white hover:bg-[#ffffff12] cursor-pointer"
                   >
                     {/* Tiktok logo */}
@@ -439,28 +460,56 @@ function App() {
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="https://web.facebook.com/profile.php?id=61559019075475"
+                    target="_blank"
                     className="flex items-center justify-center p-1.5 rounded-full border border-white hover:bg-[#ffffff12] cursor-pointer"
                   >
-                    {/* whatsapp logo */}
+                    {/* facebook logo */}
                     <svg
+                      fill="#ffffff"
                       width="20"
                       height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
+                      viewBox="0 0 1920 1920"
                       xmlns="http://www.w3.org/2000/svg"
+                      stroke="#ffffff"
                     >
-                      <path
-                        d="M15.8151 11.7702L12.8151 10.2702C12.697 10.2113 12.5655 10.1847 12.4338 10.1929C12.3021 10.2011 12.175 10.2439 12.0651 10.317L10.6879 11.2358C10.0557 10.8882 9.53546 10.368 9.18792 9.73578L10.1067 8.35859C10.1798 8.24875 10.2226 8.12157 10.2308 7.98989C10.239 7.85821 10.2124 7.72668 10.1535 7.60859L8.65355 4.60859C8.59137 4.48304 8.49527 4.3774 8.37614 4.30367C8.257 4.22993 8.11959 4.19104 7.97948 4.19141C6.98492 4.19141 6.0311 4.58649 5.32783 5.28976C4.62457 5.99302 4.22948 6.94684 4.22948 7.94141C4.23197 10.1287 5.10196 12.2257 6.64859 13.7723C8.19523 15.3189 10.2922 16.1889 12.4795 16.1914C12.9719 16.1914 13.4596 16.0944 13.9145 15.906C14.3695 15.7175 14.7829 15.4413 15.1311 15.0931C15.4794 14.7448 15.7556 14.3314 15.944 13.8765C16.1325 13.4215 16.2295 12.9339 16.2295 12.4414C16.2296 12.3021 16.1909 12.1655 16.1177 12.0469C16.0445 11.9283 15.9397 11.8325 15.8151 11.7702ZM12.4795 14.6914C10.6899 14.6894 8.97415 13.9776 7.70871 12.7122C6.44327 11.4467 5.73147 9.73101 5.72948 7.94141C5.72934 7.42121 5.90945 6.91703 6.23917 6.51466C6.56889 6.1123 7.02784 5.83662 7.53792 5.73453L8.61417 7.89078L7.69823 9.25391C7.62979 9.35658 7.58773 9.47455 7.5758 9.59736C7.56386 9.72018 7.58241 9.84404 7.6298 9.95797C8.16641 11.2333 9.181 12.2479 10.4564 12.7845C10.5706 12.834 10.6954 12.8543 10.8195 12.8435C10.9436 12.8327 11.063 12.7912 11.167 12.7227L12.5367 11.8095L14.6929 12.8858C14.59 13.3965 14.3131 13.8556 13.9095 14.1849C13.5058 14.5142 13.0004 14.6932 12.4795 14.6914ZM10.2295 0.441406C8.54617 0.441039 6.89144 0.876489 5.42635 1.70537C3.96125 2.53425 2.73572 3.72833 1.86902 5.17137C1.00232 6.61442 0.523998 8.25727 0.480598 9.94002C0.437197 11.6228 0.830202 13.2881 1.62136 14.7739L0.557297 17.9661C0.469157 18.2304 0.456366 18.514 0.520357 18.7852C0.584348 19.0563 0.722592 19.3043 0.919595 19.5013C1.1166 19.6983 1.36457 19.8365 1.63573 19.9005C1.90688 19.9645 2.1905 19.9517 2.4548 19.8636L5.64698 18.7995C6.95458 19.495 8.40343 19.8835 9.88357 19.9354C11.3637 19.9873 12.8362 19.7014 14.1894 19.0993C15.5425 18.4972 16.7407 17.5947 17.6929 16.4604C18.6452 15.326 19.3265 13.9897 19.6852 12.5527C20.0439 11.1158 20.0705 9.61597 19.763 8.16719C19.4556 6.71841 18.8221 5.35872 17.9106 4.19133C16.9992 3.02393 15.8338 2.07952 14.5029 1.42977C13.172 0.780021 11.7105 0.442014 10.2295 0.441406ZM10.2295 18.4414C8.77915 18.4424 7.35426 18.0605 6.09886 17.3342C6.00694 17.2809 5.90475 17.2477 5.79905 17.2369C5.69335 17.2261 5.58655 17.2378 5.48573 17.2714L1.97948 18.4414L3.14855 14.9352C3.18225 14.8344 3.19416 14.7276 3.18349 14.6219C3.17282 14.5162 3.13982 14.414 3.08667 14.322C2.17727 12.7498 1.81215 10.9213 2.04795 9.12037C2.28375 7.31941 3.10729 5.64661 4.39082 4.36146C5.67434 3.07631 7.3461 2.25066 9.14676 2.01258C10.9474 1.77451 12.7763 2.13732 14.3497 3.04474C15.9231 3.95215 17.1531 5.35345 17.8489 7.03124C18.5446 8.70903 18.6672 10.5695 18.1977 12.3241C17.7282 14.0787 16.6927 15.6293 15.252 16.7354C13.8113 17.8414 12.0458 18.4411 10.2295 18.4414Z"
-                        fill="white"
-                      />
+                      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        {" "}
+                        <path
+                          d="m1416.013 791.915-30.91 225.617h-371.252v789.66H788.234v-789.66H449.808V791.915h338.426V585.137c0-286.871 176.207-472.329 449.09-472.329 116.87 0 189.744 6.205 231.822 11.845l-3.272 213.66-173.5.338c-4.737-.451-117.771-9.25-199.332 65.655-52.568 48.169-79.191 117.433-79.191 205.65v181.96h402.162Zm-247.276-304.018c44.446-41.401 113.71-36.889 118.787-36.663l289.467-.113 6.204-417.504-43.544-10.717C1511.675 16.02 1426.053 0 1237.324 0 901.268 0 675.425 235.206 675.425 585.137v93.97H337v451.234h338.425V1920h451.234v-789.66h356.7l61.932-451.233H1126.66v-69.152c0-54.937 14.214-96 42.078-122.058Z"
+                          fillRule="evenodd"
+                        ></path>{" "}
+                      </g>
+                    </svg>
+                  </a>
+                  <a
+                    href="mailto:dripcityw2024@gmail.com"
+                    target="_blank"
+                    className="flex items-center justify-center p-1.5 rounded-full border border-white hover:bg-[#ffffff12] cursor-pointer"
+                  >
+                    {/* mail icon */}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="#ffffff"
+                      viewBox="0 0 256 256"
+                    >
+                      <path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"></path>
                     </svg>
                   </a>
                 </div>
               </div>
               <div className="flex flex-col items-center md:items-end justify-between min-h-[80px]">
                 <a
-                  role="button"
+                  href="https://wa.me/+2348050638697"
+                  target="_blank"
                   className="flex items-center py-2 px-5 gap-1 text-[#4D173D] font-medium border-2 border-[#FFCE00] bg-[#FFCE00] rounded-3xl"
                 >
                   <span>Buy Ticket</span>
@@ -488,7 +537,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center w-full text-sm gap-1 p-4">
+          <div className="flex items-center justify-center w-full text-xs md:text-sm whitespace-nowrap gap-1 p-4">
             Built with
             <span>
               <svg
