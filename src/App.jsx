@@ -8,12 +8,13 @@ import sponsorsLogo2 from "./assets/img/sponsors-logo-2.png";
 import sponsorsLogo3 from "./assets/img/sponsors-logo-3.png";
 import sponsorsLogo4 from "./assets/img/sponsors-logo-4.png";
 import heroDownArrow from "./assets/svgs/hero-down-arrow.svg";
-import EventSection from "./components/EventSection/EventSection";
+// import EventSection from "./components/EventSection/EventSection";
 import gsap from "gsap";
 import { ScrollTrigger, Draggable } from "gsap/all";
 import { PastEventsSection } from "./components/PastEventsSection";
 gsap.registerPlugin(ScrollTrigger, Draggable);
 import "./glitch.scss";
+import { EventSection2 } from "./components/EventSection";
 
 function App() {
   const scrollToElementBySelector = (selector) => {
@@ -52,7 +53,7 @@ function App() {
 
           <div className="flex items-center gap-3">
             <a
-              href="https://wa.me/+2348050638697"
+              href="https://wa.link/r9yiq2"
               target="_blank"
               className="flex items-center py-2 px-5 gap-1 text-[#4D173D] font-medium border-2 border-[#FFCE00] bg-[#FFCE00] rounded-3xl"
             >
@@ -114,7 +115,8 @@ function App() {
                 Party With The Best💃
               </div>
               <div className="animate-text-glow">Party With The Best</div>
-              <EventSection />
+              {/* <EventSection /> */}
+              <EventSection2 />
             </div>
           </div>
           <img
@@ -212,7 +214,7 @@ function App() {
                   </p>
                 </div>
                 <a
-                  href="https://wa.me/+2348050638697"
+                  href="https://wa.link/r9yiq2"
                   target="_blank"
                   className="w-[200px] flex items-center justify-center border-2 border-white rounded-md py-5 px-8 font-semibold text-xl hover:bg-[#ffffff12]"
                 >
@@ -254,7 +256,7 @@ function App() {
                       </p>
                     </div>
                     <a
-                      href="https://wa.me/+2348050638697"
+                      href="https://wa.link/r9yiq2"
                       target="_blank"
                       className="w-full md:max-w-[200px] flex items-center justify-center  text-[#30033B] border-2 border-[#30033B80] rounded-md py-3 px-4 font-semibold text-xl hover:bg-[#30033b0d]"
                     >
@@ -281,7 +283,7 @@ function App() {
                       </p>
                     </div>
                     <a
-                      href="https://wa.me/+2348050638697"
+                      href="https://wa.link/r9yiq2"
                       target="_blank"
                       className="w-full md:max-w-[200px] flex items-center justify-center  text-[#30033B] border-2 border-[#30033B80] rounded-md py-3 px-4 font-semibold text-xl hover:bg-[#30033b0d]"
                     >
@@ -362,11 +364,11 @@ function App() {
                 </p>
                 <div className="relative flex h-14 w-full">
                   <input
-                    className="h-14 w-full px-4 py-2 pr-20 font-medium text-[#D388ED6E] rounded-sm border-b-2 border-b-[#D388ED]/60 border-0 outline-none focus:border-b-2 focus-visible:border-b-2 focus-visible:border-b-[#D388ED] bg-[#FDF6EF1A] placeholder:text-[#D388ED6E]"
+                    className="h-14 w-full px-4 py-2 pr-20 font-medium text-white rounded-sm border-b-2 border-b-[#D388ED]/60 border-0 outline-none focus:border-b-2 focus-visible:border-b-2 focus-visible:border-b-[#D388ED] bg-[#FDF6EF1A] placeholder:text-[#D388ED6E]"
                     placeholder="Enter Your Email"
                     type="email "
                   />
-                  <button className="absolute right-4 top-1/2 -translate-y-1/2 text-[#FDDDBF80] hover:text-[#FDDDBF] font-medium cursor-pointer">
+                  <button className="absolute right-4 top-1/2 -translate-y-1/2 text-[#fdddbf92] hover:text-[#FDDDBF] font-medium cursor-pointer">
                     Submit
                   </button>
                 </div>
@@ -508,7 +510,7 @@ function App() {
               </div>
               <div className="flex flex-col items-center md:items-end justify-between min-h-[80px]">
                 <a
-                  href="https://wa.me/+2348050638697"
+                  href="https://wa.link/r9yiq2"
                   target="_blank"
                   className="flex items-center py-2 px-5 gap-1 text-[#4D173D] font-medium border-2 border-[#FFCE00] bg-[#FFCE00] rounded-3xl"
                 >
