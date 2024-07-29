@@ -97,7 +97,7 @@ const EventSection2 = () => {
       // fix prev not working on page load
       const el = eventSection.querySelector(".event-section__actions-next");
       if (el) {
-        for (let i = 1; i <= EVENT_FLIERS.length; i++) {
+        for (let i = 1; i < EVENT_FLIERS.length; i++) {
           el.click();
         }
       }
