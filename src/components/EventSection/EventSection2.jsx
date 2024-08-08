@@ -93,16 +93,16 @@ const EventSection2 = () => {
         // setActiveBanner(activeBanner - 1);
       });
 
-    window.onload = () => {
-      // fix prev not working on page load
-      const el = eventSection.querySelector(".event-section__actions-next");
-      if (el) {
-        for (let i = 1; i < EVENT_FLIERS.length; i++) {
-          el.click();
-        }
-      }
-      // setActiveBanner(1); // Update activeBanner state to 1 after simulating clicks
-    };
+    // window.onload = () => {
+    //   // fix prev not working on page load
+    //   const el = eventSection.querySelector(".event-section__actions-next");
+    //   if (el) {
+    //     for (let i = 1; i < EVENT_FLIERS.length; i++) {
+    //       el.click();
+    //     }
+    //   }
+    //   // setActiveBanner(1); // Update activeBanner state to 1 after simulating clicks
+    // };
 
     function buildSeamlessLoop(items, spacing) {
       let overlap = Math.ceil(1 / spacing);

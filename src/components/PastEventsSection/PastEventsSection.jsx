@@ -1,12 +1,20 @@
 import { useEffect } from "react";
 import hotFaceEmoji from "../../assets/img/hot-face-emoji.png";
-import pastEvent1 from "../../assets/img/past-event-1.jpg";
+// import pastEvent1 from "../../assets/img/past-event-1.jpg";
 import pastEvent2 from "../../assets/img/past-event-2.jpg";
-import pastEvent3 from "../../assets/img/past-event-3.jpg";
+// import pastEvent3 from "../../assets/img/past-event-3.jpg";
 import pastEvent4 from "../../assets/img/past-event-4.jpg";
-import pastEvent5 from "../../assets/img/past-event-5.jpg";
-import pastEvent6 from "../../assets/img/past-event-6.jpg";
-import pastEvent7 from "../../assets/img/past-event-7.jpg";
+// import pastEvent5 from "../../assets/img/past-event-5.jpg";
+// import pastEvent6 from "../../assets/img/past-event-6.jpg";
+// import pastEvent7 from "../../assets/img/past-event-7.jpg";
+// import abrakaEvent1 from "../../assets/img/abraka-event-1.jpg";
+import abrakaEvent2 from "../../assets/img/abraka-event-2.jpg";
+// import abrakaEvent3 from "../../assets/img/abraka-event-3.jpg";
+import abrakaEvent4 from "../../assets/img/abraka-event-4.jpg";
+// import abrakaEvent5 from "../../assets/img/abraka-event-5.jpg";
+import abrakaEvent6 from "../../assets/img/abraka-event-6.jpg";
+// import abrakaEvent7 from "../../assets/img/abraka-event-7.jpg";
+import abrakaEvent8 from "../../assets/img/abraka-event-8.jpg";
 import gsap from "gsap";
 import { ScrollTrigger, Draggable } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger, Draggable);
@@ -68,7 +76,7 @@ const PastEventsSection = () => {
             >
               <img
                 className="w-[200px] h-[250px] object-cover rounded-lg"
-                src={pastEvent1}
+                src={abrakaEvent4}
                 alt=""
               />
               <img
@@ -79,7 +87,7 @@ const PastEventsSection = () => {
 
               <img
                 className="w-[200px] h-[250px] object-cover rounded-lg"
-                src={pastEvent1}
+                src={abrakaEvent4}
                 alt=""
               />
               <img
@@ -95,7 +103,7 @@ const PastEventsSection = () => {
             >
               <img
                 className="w-[200px] h-[200px] object-cover rounded-lg"
-                src={pastEvent3}
+                src={abrakaEvent2}
                 alt=""
               />
               <img
@@ -105,13 +113,13 @@ const PastEventsSection = () => {
               />
               <img
                 className="w-[200px] h-[200px] object-cover rounded-lg"
-                src={pastEvent5}
+                src={abrakaEvent8}
                 alt=""
               />
 
               <img
                 className="w-[200px] h-[200px] object-cover rounded-lg"
-                src={pastEvent3}
+                src={abrakaEvent2}
                 alt=""
               />
               <img
@@ -121,7 +129,7 @@ const PastEventsSection = () => {
               />
               <img
                 className="w-[200px] h-[200px] object-cover rounded-lg"
-                src={pastEvent5}
+                src={abrakaEvent8}
                 alt=""
               />
             </div>
@@ -132,23 +140,23 @@ const PastEventsSection = () => {
             >
               <img
                 className="w-[200px] h-[250px] object-cover rounded-lg"
-                src={pastEvent6}
+                src={abrakaEvent6}
                 alt=""
               />
               <img
                 className="w-[200px] h-[200px] object-cover rounded-lg"
-                src={pastEvent7}
+                src={abrakaEvent8}
                 alt=""
               />
 
               <img
                 className="w-[200px] h-[250px] object-cover rounded-lg"
-                src={pastEvent6}
+                src={abrakaEvent6}
                 alt=""
               />
               <img
                 className="w-[200px] h-[200px] object-cover rounded-lg"
-                src={pastEvent7}
+                src={abrakaEvent8}
                 alt=""
               />
             </div>

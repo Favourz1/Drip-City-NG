@@ -7,7 +7,7 @@ import sponsorsLogo1 from "./assets/img/sponsors-logo-1.png";
 import sponsorsLogo2 from "./assets/img/sponsors-logo-2.png";
 import sponsorsLogo3 from "./assets/img/sponsors-logo-3.png";
 import sponsorsLogo4 from "./assets/img/sponsors-logo-4.png";
-import heroDownArrow from "./assets/svgs/hero-down-arrow.svg";
+// import heroDownArrow from "./assets/svgs/hero-down-arrow.svg";
 // import EventSection from "./components/EventSection/EventSection";
 import gsap from "gsap";
 import { ScrollTrigger, Draggable } from "gsap/all";
@@ -119,12 +119,12 @@ function App() {
               <EventSection2 />
             </div>
           </div>
-          <img
+          {/* <img
             className="absolute bottom-0 left-0 cursor-pointer"
             src={heroDownArrow}
             alt=""
             onClick={() => scrollToElementBySelector("#poster-section")}
-          />
+          /> */}
         </section>
         <section className="relative py-32 bg-contain bg-no-repeat bg-[right_center] bg-fixed bg-[url('./assets/img/about-section-bg.png')]">
           <div className="container mx-auto px-4 md:px-12">
