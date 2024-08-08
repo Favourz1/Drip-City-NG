@@ -80,8 +80,15 @@ const PastEventsSection = () => {
                 alt=""
               />
               <img
-                className="w-[200px] h-[200px] object-cover rounded-lg"
+                className="hidden md:flex w-[200px] h-[200px] object-cover rounded-lg"
                 src={pastEvent2}
+                alt=""
+              />
+
+              {/* Mobile */}
+              <img
+                className="flex md:hidden w-[200px] h-[200px] object-cover rounded-lg"
+                src={abrakaEvent8}
                 alt=""
               />
 
@@ -91,8 +98,15 @@ const PastEventsSection = () => {
                 alt=""
               />
               <img
-                className="w-[200px] h-[200px] object-cover rounded-lg"
+                className="hidden md:flex w-[200px] h-[200px] object-cover rounded-lg"
                 src={pastEvent2}
+                alt=""
+              />
+
+              {/* Mobile */}
+              <img
+                className="flex md:hidden w-[200px] h-[200px] object-cover rounded-lg"
+                src={abrakaEvent8}
                 alt=""
               />
             </div>
